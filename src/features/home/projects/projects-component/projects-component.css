@@ -1,0 +1,236 @@
+.projects-section{
+
+    padding:0 0;
+}
+
+.project-card{
+
+    background:#FFFFFF;
+
+    border:1px solid #E2E8F0;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    transition:.3s;
+
+    height:100%;
+
+    box-shadow:0 10px 25px rgba(15,23,42,.06);
+}
+
+.project-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 20px 40px rgba(59,130,246,.12);
+}
+
+.project-image{
+
+    width:100%;
+
+    height:220px;
+
+    object-fit:cover;
+}
+
+.project-body{
+
+    padding:25px;
+}
+
+.project-body h4{
+
+    color:#0F172A;
+
+    font-weight:700;
+
+    margin-bottom:15px;
+}
+
+.project-body p{
+
+    color:#64748B;
+
+    line-height:1.7;
+}
+
+.tech-stack{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:10px;
+
+    margin:20px 0;
+}
+
+.tech-stack span{
+
+    background:#EFF6FF;
+
+    color:#2563EB;
+
+    padding:6px 14px;
+
+    border-radius:30px;
+
+    font-size:14px;
+
+    font-weight:600;
+}
+
+.project-buttons{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    margin-top:20px;
+}
+
+.view-all-link{
+
+    text-decoration:none;
+
+    color:#3B82F6;
+
+    font-weight:600;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    transition:.3s;
+}
+
+.view-all-link:hover{
+
+    color:#2563EB;
+
+    transform:translateX(5px);
+}
+
+
+.left-content{
+
+    display:flex;
+
+    flex-direction:column;
+}
+
+.right-content{
+
+    margin-top:10px;
+}
+
+.section-header{
+
+    position:relative;
+
+    margin-bottom:60px;
+}
+
+/* Center Content */
+
+.section-center{
+
+    text-align:center;
+
+    width:100%;
+}
+
+.section-subtitle{
+
+    display:block;
+}
+
+.section-title{
+
+    margin-top:10px;
+}
+
+.section-description{
+
+    max-width:650px;
+
+    margin:15px auto 0;
+}
+
+/* Right Link */
+
+
+.view-all-link{
+
+    position:absolute;
+
+    right:0;
+
+    top:10px;
+
+    text-decoration:none;
+
+    color:#3B82F6;
+
+    font-weight:600;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    transition:.3s;
+}
+
+.view-all-link:hover{
+
+    color:#2563EB;
+
+    transform:translateX(5px);
+}
+
+@media(max-width:768px){
+
+.section-header{
+
+    flex-direction:column;
+
+    align-items:flex-start;
+
+    gap:15px;
+
+}
+
+  .view-all-link{
+
+        position:static;
+
+        display:flex;
+
+        justify-content:center;
+
+        margin-top:20px;
+    }
+
+.project-buttons{
+
+    flex-direction:column;
+
+    gap:15px;
+}
+
+.project-buttons .btn{
+
+    width:100%;
+}
+.right-content{
+
+    margin-top:15px;
+}
+}

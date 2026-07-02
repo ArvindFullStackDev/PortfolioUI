@@ -1,0 +1,126 @@
+<section class="skills-section" id="skills">
+
+    <div class="container">
+
+        <div class="text-center mb-5">
+
+            <span class="section-subtitle">
+                Technical Skills
+            </span>
+
+            <h2 class="section-title">
+                Technologies & Tools
+            </h2>
+
+            <p class="section-description">
+                Technologies I use to build scalable enterprise applications.
+            </p>
+
+        </div>
+
+
+        @if(!isMobile){
+        <div class="skill-scroll" #skillScroll>
+
+            <div class="skill-track">
+
+                @for(skill of skillCategories; track skill.title){
+
+                <div class="skill-card">
+
+                    <div class="skill-icon">
+                        <i class="{{skill.icon}}"></i>
+                    </div>
+
+                    <h4>{{skill.title}}</h4>
+
+                    <ul>
+
+                        @for(item of skill.skills; track item){
+
+                        <li>
+                            <i class="bi bi-check-circle-fill"></i>
+                            {{item}}
+                        </li>
+
+                        }
+
+                    </ul>
+
+                </div>
+
+                }
+
+                <!-- Duplicate Cards -->
+
+                @for(skill of skillCategories; track skill.title + '-copy'){
+
+                <div class="skill-card">
+
+                    <div class="skill-icon">
+                        <i class="{{skill.icon}}"></i>
+                    </div>
+
+                    <h4>{{skill.title}}</h4>
+
+                    <ul>
+
+                        @for(item of skill.skills; track item){
+
+                        <li>
+                            <i class="bi bi-check-circle-fill"></i>
+                            {{item}}
+                        </li>
+
+                        }
+
+                    </ul>
+
+                </div>
+
+                }
+
+            </div>
+
+        </div>
+
+        }
+        @else{
+
+        <div class="mobile-skills">
+
+            @for(skill of skillCategories; track skill.title){
+
+            <div class="skill-card">
+
+                <div class="skill-icon">
+                    <i class="{{skill.icon}}"></i>
+                </div>
+
+                <h4>{{skill.title}}</h4>
+
+                <ul>
+
+                    @for(item of skill.skills; track item){
+
+                    <li>
+                        <i class="bi bi-check-circle-fill"></i>
+                        {{item}}
+                    </li>
+
+                    }
+
+                </ul>
+
+            </div>
+
+            }
+
+        </div>
+
+        }
+
+
+    </div>
+
+</section>

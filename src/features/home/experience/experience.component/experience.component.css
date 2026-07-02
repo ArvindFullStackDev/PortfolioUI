@@ -1,0 +1,209 @@
+.experience-section{
+
+    padding:0 0;
+
+    background:#fff;
+}
+
+/* Timeline */
+
+.timeline{
+
+    position:relative;
+
+    display:grid;
+
+    /* For Work Expersience, 2 columns are enough. So, I have commented the 3 column code. */
+    /* grid-template-columns:repeat(3,1fr); */
+
+     grid-template-columns:repeat(2,1fr);
+
+    gap:40px;
+}
+
+/* Horizontal Line */
+
+.timeline::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:38px;
+
+    left:0;
+
+    right:0;
+
+    height:2px;
+
+    background:#DCE7F8;
+
+}
+
+/* Item */
+
+.timeline-item{
+
+    position:relative;
+
+    text-align:center;
+}
+
+/* Circle */
+
+.timeline-icon{
+
+    width:70px;
+
+    height:70px;
+
+    margin:auto;
+
+    background:#2563EB;
+
+    color:#fff;
+
+    border-radius:50%;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    font-size:28px;
+
+    position:relative;
+
+    z-index:2;
+
+    box-shadow:0 10px 25px rgba(37,99,235,.25);
+}
+
+/* Card */
+
+.experience-card{
+
+    margin-top:30px;
+
+    padding:30px;
+
+    border:1px solid #E2E8F0;
+
+    border-radius:20px;
+
+    background:#fff;
+
+    text-align:left;
+
+    box-shadow:0 10px 25px rgba(15,23,42,.05);
+
+    transition:.3s;
+}
+
+.experience-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 20px 40px rgba(37,99,235,.12);
+}
+
+.duration{
+
+    color:#3B82F6;
+
+    font-weight:700;
+
+}
+
+.experience-card h4{
+
+    margin:10px 0 5px;
+
+    color:#0F172A;
+
+    font-weight:700;
+}
+
+.experience-card h6{
+
+    color:#2563EB;
+
+    margin-bottom:20px;
+}
+
+.experience-card ul{
+
+    padding-left:0;
+
+    list-style:none;
+
+}
+
+.experience-card li{
+
+    display:flex;
+
+    align-items:flex-start;
+
+    gap:10px;
+
+    margin-bottom:12px;
+
+    color:#475569;
+}
+
+.experience-card li i{
+
+    color:#3B82F6;
+
+    margin-top:4px;
+}
+
+@media(max-width:991px){
+
+.timeline{
+
+    grid-template-columns:1fr;
+
+    gap:50px;
+}
+
+.timeline::before{
+
+    left:34px;
+
+    top:0;
+
+    width:2px;
+
+    height:100%;
+}
+
+.timeline-item{
+
+    display:flex;
+
+    gap:25px;
+
+    align-items:flex-start;
+
+    text-align:left;
+}
+
+.timeline-icon{
+
+    margin:0;
+
+    flex-shrink:0;
+}
+
+.experience-card{
+
+    margin-top:0;
+
+    width:100%;
+}
+
+}

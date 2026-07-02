@@ -1,0 +1,349 @@
+.skills-section {
+
+    padding: 40px 0;
+}
+
+.skill-card {
+
+    background: #fff;
+
+    border: 1px solid #E2E8F0;
+
+    border-radius: 20px;
+
+    padding: 30px;
+
+    height: 100%;
+
+    transition: .3s;
+
+    box-shadow: 0 10px 25px rgba(15, 23, 42, .05);
+}
+
+.skill-card:hover {
+
+    transform: translateY(-8px);
+
+    border-color: #3B82F6;
+
+    box-shadow: 0 20px 40px rgba(59, 130, 246, .15);
+}
+
+.skill-icon {
+
+    width: 70px;
+
+    height: 70px;
+
+    background: #EFF6FF;
+
+    border-radius: 18px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    margin-bottom: 20px;
+}
+
+.skill-icon i {
+
+    font-size: 32px;
+
+    color: #3B82F6;
+}
+
+.skill-card h4 {
+
+    font-size: 24px;
+
+    font-weight: 700;
+
+    margin-bottom: 20px;
+
+    color: #0F172A;
+}
+
+.skill-card ul {
+
+    list-style: none;
+
+    padding: 0;
+
+    margin: 0;
+}
+
+.skill-card li {
+
+    margin-bottom: 12px;
+
+    color: #475569;
+
+    display: flex;
+
+    align-items: center;
+}
+
+.skill-card li i {
+
+    color: #3B82F6;
+
+    margin-right: 10px;
+}
+
+.section-description {
+
+    color: #64748B;
+
+    max-width: 600px;
+
+    margin: auto;
+}
+
+.skills-section {
+
+    padding: 0 0;
+}
+
+.skill-card {
+
+    width: 320px;
+
+    flex-shrink: 0;
+}
+
+.skill-card:hover {
+
+    transform: translateY(-8px);
+
+    border-color: #3B82F6;
+
+    box-shadow: 0 20px 40px rgba(59, 130, 246, .15);
+}
+
+.skill-icon {
+
+    width: 70px;
+
+    height: 70px;
+
+    background: #EFF6FF;
+
+    border-radius: 18px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    margin-bottom: 20px;
+}
+
+.skill-icon i {
+
+    font-size: 32px;
+
+    color: #3B82F6;
+}
+
+.skill-card h4 {
+
+    font-size: 24px;
+
+    font-weight: 700;
+
+    margin-bottom: 20px;
+
+    color: #0F172A;
+}
+
+.skill-card ul {
+
+    list-style: none;
+
+    padding: 0;
+
+    margin: 0;
+}
+
+.skill-card li {
+
+    margin-bottom: 12px;
+
+    color: #475569;
+
+    display: flex;
+
+    align-items: center;
+}
+
+.skill-card li i {
+
+    color: #3B82F6;
+
+    margin-right: 10px;
+}
+
+.section-description {
+
+    color: #64748B;
+
+    max-width: 600px;
+
+    margin: auto;
+}
+
+.skill-scroll {
+
+    overflow:hidden;
+    cursor: grab;
+    user-select:none;
+}
+
+.skill-scroll:active{
+    cursor: grabbing;
+}
+
+.skill-track {
+
+    display: flex;
+
+    gap: 25px;
+
+    width: max-content;
+
+    animation: scrollSkills 30s linear infinite;
+}
+
+/* Chrome */
+
+.skill-scroll::-webkit-scrollbar {
+
+    height: 10px;
+}
+
+.skill-scroll::-webkit-scrollbar-thumb {
+
+    background: #3B82F6;
+
+    border-radius: 20px;
+}
+
+.skill-scroll::-webkit-scrollbar-track {
+
+    background: #E5E7EB;
+}
+
+.skill-track:hover {
+
+    animation-play-state: paused;
+}
+
+@media (max-width:768px) {
+
+    .skill-scroll {
+
+        display: flex;
+
+        flex-direction: column;
+
+        overflow: hidden;
+
+        gap: 20px;
+    }
+
+    .skill-card {
+
+        width: 100%;
+
+        min-width: 100%;
+
+        max-width: 100%;
+
+        padding: 25px;
+    }
+
+    /* Icon only center */
+
+    .skill-icon {
+
+        display: flex;
+
+        justify-content: center;
+
+        align-items: center;
+
+        margin-bottom: 20px;
+    }
+
+    /* Heading left */
+
+    .skill-card h4 {
+
+        text-align: left;
+
+        margin-bottom: 20px;
+    }
+
+    /* Skills left */
+
+    .skill-card ul {
+
+        padding-left: 0;
+
+        margin: 0;
+    }
+
+    .skill-card li {
+
+        display: flex;
+
+        align-items: center;
+
+        justify-content: flex-start;
+
+        text-align: left;
+
+        margin-bottom: 12px;
+    }
+
+    .skill-card li i {
+
+        margin-right: 10px;
+    }
+
+
+    .skill-track {
+
+        animation: none;
+
+        display: flex;
+
+        flex-direction: column;
+
+        width: 100%;
+    }
+
+    .skill-card {
+
+        width: 100%;
+    }
+
+}
+
+@keyframes scrollSkills {
+
+    from {
+
+        transform: translateX(0);
+    }
+
+    to {
+
+        transform: translateX(-50%);
+    }
+
+}

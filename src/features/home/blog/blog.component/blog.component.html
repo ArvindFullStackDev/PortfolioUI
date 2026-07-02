@@ -1,0 +1,100 @@
+<section class="blog-section" id="blog">
+
+    <div class="container">
+
+        <!-- Header -->
+
+       <div class="section-header">
+
+    <div class="section-center">
+
+        <span class="section-subtitle">
+            Latest Blog Posts
+        </span>
+
+        <h2 class="section-title">
+            Latest Articles
+        </h2>
+
+        <p class="section-description">
+            Sharing my knowledge and experience in .NET, Angular,
+            Clean Architecture and Azure.
+        </p>
+
+    </div>
+
+    <a routerLink="/blogs" class="view-all-link">
+
+        View All
+
+        <i class="bi bi-arrow-right ms-1"></i>
+
+    </a>
+
+</div>
+
+        <!-- Cards -->
+
+        <div class="row g-4">
+
+            @for(blog of blogs; track blog.title){
+
+            <div class="col-lg-4 col-md-6">
+
+                <div class="blog-card">
+
+                    <img
+                        [src]="blog.image"
+                        [alt]="blog.title">
+
+                    <div class="blog-body">
+
+                        <div class="blog-info">
+
+                            <span>
+
+                                <i class="bi bi-calendar3"></i>
+
+                                {{blog.date}}
+
+                            </span>
+
+                            <span>
+
+                                <i class="bi bi-clock"></i>
+
+                                {{blog.readTime}}
+
+                            </span>
+
+                        </div>
+
+                        <h4>
+
+                            {{blog.title}}
+
+                        </h4>
+
+                        <a
+                            [href]="blog.link"
+                            class="read-more">
+
+                            Read Article
+
+                            <i class="bi bi-arrow-right"></i>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            }
+
+        </div>
+
+    </div>
+
+</section>

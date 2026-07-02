@@ -36,31 +36,33 @@
       <ul class="navbar-nav mx-auto">
 
         <li class="nav-item">
-          <a class="nav-link active" href="#home">Home</a>
+          <a class="nav-link active"           
+           (click)="scrollTo('home')"
+          [class.active]="activeSection === 'home'">Home</a>
         </li>
 
         <li class="nav-item">
-          <a class="nav-link" href="#about">About</a>
+          <a class="nav-link"  (click)="scrollTo('about')" [class.active]="activeSection === 'about'">About</a>
         </li>
 
         <li class="nav-item">
-          <a class="nav-link" href="#skills">Skills</a>
+          <a class="nav-link"  (click)="scrollTo('skills')" [class.active]="activeSection === 'skills'">Skills</a>
         </li>
 
         <li class="nav-item">
-          <a class="nav-link" href="#projects">Projects</a>
+          <a class="nav-link"  (click)="scrollTo('projects')" [class.active]="activeSection === 'projects'">Projects</a>
         </li>
 
         <li class="nav-item">
-          <a class="nav-link" href="#experience">Experience</a>
+          <a class="nav-link" (click)="scrollTo('experience')" [class.active]="activeSection === 'experience'">Experience</a>
         </li>
 
         <li class="nav-item">
-          <a class="nav-link" href="#blog">Blog</a>
+          <a class="nav-link"  (click)="scrollTo('blog')" [class.active]="activeSection === 'blog'">Blog</a>
         </li>
 
         <li class="nav-item">
-          <a class="nav-link" href="#contact">Contact</a>
+          <a class="nav-link"  (click)="scrollTo('contact')" [class.active]="activeSection === 'contact'">Contact</a>
         </li>
 
       </ul>

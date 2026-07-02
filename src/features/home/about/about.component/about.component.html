@@ -1,0 +1,103 @@
+<section class="about-section" id="about">
+
+    <div class="container">
+
+          <div class="text-center mb-5">
+
+            <span class="section-subtitle" style="color: #3B82F6">
+                About Me
+            </span>      
+
+        </div>
+
+
+        <div class="row align-items-center">
+             
+            <!-- Left Side -->
+
+            <div class="col-lg-5 order-1">
+
+                <div class="about-image">
+
+                    <img
+                        src="assets/images/aboutMe.png"
+                        class="img-fluid"
+                        alt="About">
+
+                </div>
+
+            </div>
+
+            <!-- Right Side -->
+
+            <div class="col-lg-7 order-2">
+
+            
+
+                <h2>
+                    Senior .NET Developer
+                </h2>
+
+                <p class="about-description">
+
+                    I'm a Senior .NET Developer with 8+ years of experience
+                    in designing, developing and deploying enterprise
+                    applications using ASP.NET Core, C#, SQL Server and
+                    modern architecture.
+
+                    I focus on writing clean, maintainable code and
+                    delivering scalable enterprise applications.
+
+                </p>
+
+                <div class="row mt-4">
+
+                    <div class="col-md-6">
+
+                        <ul>
+
+                            <li *ngFor="let item of skillsLeft">
+
+                                <i class="bi bi-check-circle-fill"></i>
+
+                                {{item}}
+
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                    <div class="col-md-6">
+
+                        <ul>
+
+                            <li *ngFor="let item of skillsRight">
+
+                                <i class="bi bi-check-circle-fill"></i>
+
+                                {{item}}
+
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+
+                <button class="btn btn-primary mt-4">
+
+                    More About Me
+
+                    <i class="bi bi-arrow-right ms-2"></i>
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>

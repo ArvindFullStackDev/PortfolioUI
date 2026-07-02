@@ -1,0 +1,87 @@
+<section class="experience-section" id="experience">
+
+    <div class="container">
+
+        <!-- Section Heading -->
+
+        <div class="text-center mb-5">
+
+            <span class="section-subtitle">
+                Work Experience
+            </span>
+
+            <h2 class="section-title">
+                Professional Journey
+            </h2>
+
+            <p class="section-description">
+                My professional experience in enterprise application development.
+            </p>
+
+        </div>
+
+        <!-- Timeline -->
+
+        <div class="timeline">
+
+            @for(exp of experiences; track exp.company){
+
+            <div class="timeline-item">
+
+                <!-- Timeline Icon -->
+
+                <div class="timeline-icon">
+
+                    <i class="{{exp.icon}}"></i>
+
+                </div>
+
+                <!-- Experience Card -->
+
+                <div class="experience-card">
+
+                    <span class="experience-duration">
+
+                        {{exp.duration}}
+
+                    </span>
+
+                    <h4>
+
+                        {{exp.designation}}
+
+                    </h4>
+
+                    <h6>
+
+                        {{exp.company}}
+
+                    </h6>
+
+                    <ul>
+
+                        @for(item of exp.responsibilities; track item){
+
+                        <li>
+
+                            <i class="bi bi-check-circle-fill"></i>
+
+                            {{item}}
+
+                        </li>
+
+                        }
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+            }
+
+        </div>
+
+    </div>
+
+</section>
